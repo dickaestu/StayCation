@@ -49,7 +49,7 @@ export default function Button(props) {
           to={props.href}
           className={className.join(" ")}
           style={props.style}
-          onClick={onclick}
+          onClick={onClick}
         >
           {props.children}
         </Link>
@@ -61,7 +61,7 @@ export default function Button(props) {
     <button
       className={className.join(" ")}
       style={props.style}
-      onClick={onclick}
+      onClick={onClick}
     >
       {props.children}
     </button>
@@ -81,5 +81,6 @@ Button.propTypes = {
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
+  isPrimary: propTypes.bool,
   hasShadow: propTypes.bool,
 };
